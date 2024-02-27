@@ -138,8 +138,11 @@ rules:
   - RULE-SET,ProxyLite,🌏 全球加速
   - RULE-SET,ChinaIP,DIRECT
   - GEOIP,CN,DIRECT
-  - MATCH,🐟 兜底分流
-
+ MATCH,🐟 兜底分流
+# > gugu服务器
+  - host,main.gugumedia.link,direct
+  - host,pro.gugumedia.link,direct
+  - host,front.gugumedia.link,direct
 
 # TUN模式是通过在操作系统上安装一个虚拟网卡来实现的，它可以接管所有的网络流量，并将流量转发至Clash，然后由Clash发出请求
 # Windows 系统中如何启用TUN模式
