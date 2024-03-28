@@ -89,7 +89,7 @@ proxy-groups:
   - {name: 🎮 游戏平台, <<: *a3}
   - {name: 🆎 AdBlock, type: select, proxies: [REJECT]}
   - {name: 🐟 兜底分流, <<: *a3}
-  - {name: 📺 Emby, type: select, proxies: [DIRECT,0.01,Hong Kong,🇭🇰 香港节点, 🇨🇳 台湾节点]}
+  - {name: 📺 Emby, <<: *a3}, proxies: [DIRECT,0.01,Hong Kong,🇭🇰 香港节点, 🇨🇳 台湾节点]}
 #节点分组
   - {name: ♻️ 自动选择, <<: *a4}
   - {name: 🇭🇰 香港节点, <<: *a4, filter: "港|HK|(?i)Hong"           }             # a4更改为a2，即为手动选择
