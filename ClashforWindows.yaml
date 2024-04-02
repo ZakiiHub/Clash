@@ -140,7 +140,40 @@ rules:
   - RULE-SET,ChinaIP,DIRECT
   - GEOIP,CN,DIRECT
   - MATCH,🐟 兜底分流
+# > Misakaf服务器
+  -DOMAIN-SUFFIX,cdn.misakaf.org,Emby
+  -DOMAIN-SUFFIX,push-kr.misakaf.org,Emby
+  -DOMAIN-SUFFIX,porn.aca.best,Emby
+  -DOMAIN-SUFFIX,emby.aca.best,Emby
+  -DOMAIN-SUFFIX,102.223.180.108,Emby
+  -DOMAIN-SUFFIX,stream1.misakaf.org,Emby
+  -DOMAIN-SUFFIX,stream2.misakaf.org,Emby
+  -DOMAIN-SUFFIX,stream3.misakaf.org,Emby
+  -DOMAIN-SUFFIX,stream4.misakaf.org,Emby
+# > TreeDiagram服务器
+  -DOMAIN-SUFFIX,789.123456.al,Emby
 
+# > 终点站服务器
+  -DOMAIN-SUFFIX,pub1.emby.wtf,Emby
+  -DOMAIN-SUFFIX,pub2.emby.wtf,Emby
+  -DOMAIN-SUFFIX,pub3.emby.wtf,Emby
+  -DOMAIN-SUFFIX,pub4.emby.wtf,Emby
+
+  -DOMAIN-SUFFIX,public.emby.ws,Emby
+
+# > Nmemby服务器
+  -DOMAIN-SUFFIX,film.ohhhh.org,Emby
+
+# > lyrebirdemby服务器
+  -DOMAIN-SUFFIX,cdn.lyrebirdemby.com,Emby
+# > gugu服务器
+  -DOMAIN-SUFFIX,main.gugumedia.link,Emby
+  -DOMAIN-SUFFIX,pro.gugumedia.link,Emby
+  -DOMAIN-SUFFIX,front.gugumedia.link,Emby
+  -DOMAIN-SUFFIX,gu.iuii.cc,Emby
+
+# > micu服务器
+  -DOMAIN-SUFFIX,tv.micu.hk,direct
 
 # TUN模式是通过在操作系统上安装一个虚拟网卡来实现的，它可以接管所有的网络流量，并将流量转发至Clash，然后由Clash发出请求
 # Windows 系统中如何启用TUN模式
